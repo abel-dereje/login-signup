@@ -1,23 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import LoginSignup from './Components/LoginSignup/LoginSignup';
+
+//import user_icon from '../Assets/person.png';
+import email_icon from './Components/Assets/email.png';
+import password_icon from './Components/Assets/password.png';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+    <div className='header'>
+    <div className='text'> Login </div>
+    <div className='underline'></div>
+    </div>
+    <div className='inputs'>
+    <div className='input'>
+    <img src={email_icon} alt='' />
+    <input type='email' />
+    </div>
+    <div className='input'>
+    <img src={password_icon} alt='' />
+    <input type='password' />
+    </div>
+    </div>
     </div>
   );
 }
